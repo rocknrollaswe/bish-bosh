@@ -42,7 +42,7 @@ bosh.oninput = function(){
 function Reset(){
 
     var parentElement = document.getElementById("area");
-    parentElement.remove();
+    parentElement.innerHTML='';
 }
 
 //Loads and presents all elements in the presentation-area section
@@ -53,11 +53,11 @@ function Go(){
     let bosh = document.getElementById("bosh");
 
 
-    var section = document.createElement("section");
+    /*var section = document.createElement("section");
 
     section.id = "area";
 
-    document.body.appendChild(section);
+    document.body.appendChild(section);*/
 
     for (let index = 1; index <= numbers.value; index++) {
         
@@ -65,6 +65,7 @@ function Go(){
             let textnode = document.createTextNode("Bish-Bosh");
             let p = document.createElement("p");
             p.appendChild(textnode);
+            p.className="bish-bosh";
             area.appendChild(p); 
             continue;
         }
@@ -72,6 +73,7 @@ function Go(){
             let textnode = document.createTextNode("Bish");
             let p = document.createElement("p");
             p.appendChild(textnode);
+            p.className="bish";
             area.appendChild(p); 
             continue;
         }
@@ -79,6 +81,7 @@ function Go(){
             let textnode = document.createTextNode("Bosh");
             let p = document.createElement("p");
             p.appendChild(textnode);
+            p.className="bosh";
             area.appendChild(p); 
             continue;
         }
@@ -86,6 +89,7 @@ function Go(){
             let textnode = document.createTextNode(index);
             let p = document.createElement("p");
             p.appendChild(textnode);
+           
             area.appendChild(p); 
             continue;
         } 

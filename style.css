@@ -34,13 +34,37 @@ h1{
 
 p{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin:10px;
-    font-size: 15px;
-    width:70px;
+    font-size: 10px;
+    width:85px;
     padding:10px;
     border:2px dotted rgba(255, 255, 255, 0.2);
     border-radius: 50px;
 }
+
+.bish-bosh{
+    color:rgb(95, 248, 29);
+    border-color:rgb(95, 248, 29);
+    font-size: 20px;
+}
+
+.bish{
+    color:rgb(126, 154, 255);
+    border-color:rgb(126, 154, 255);
+    font-size: 20px;
+}
+
+.bosh{
+    color:rgb(247, 92, 53);
+    border-color:rgb(247, 92, 53);
+    font-size: 20px;
+    
+}
+
+
 
 #area{
     justify-content: center;
